@@ -6,6 +6,7 @@ import SearchBox from '../components/SearchBox';
 import ErrorBoundary from '../components/ErrorBoundary';
 import Header from '../components/Header';
 import {setSearchField, requestRobots} from '../actions';
+import '../App.css';
 
 const mapStateToProps = state => {
     return {

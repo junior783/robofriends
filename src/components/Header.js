@@ -9,8 +9,8 @@ class Header extends Component {
     render(){
         return (
             <div>
+                <h1 className="f2">RoboFriends</h1>
                 <CounterButton color={'red'} />
-                <h1>RoboFriends</h1>
             </div>
         )
     }
