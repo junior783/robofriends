@@ -17,7 +17,8 @@
   "scripts": {
     "start": "set \"BROWSER=none\" && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "_test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -36,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2"
   }
 }
